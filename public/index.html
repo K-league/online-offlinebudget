@@ -43,5 +43,12 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="index.js"></script>
+  <script>
+    const request = window.indexedDB.open("firstDatabase", 1);
+
+    request.onsuccess = event => {
+      console.log(request.result.name);
+    };
+  </script>
 </body>
 </html>
