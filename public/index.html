@@ -43,6 +43,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="index.js"></script>
+  <!-- indexedDB -->
   <script>
     const request = window.indexedDB.open("firstDatabase", 1);
 
@@ -50,5 +51,15 @@
       console.log(request.result.name);
     };
   </script>
+  <!-- service-worker -->
+    <script type="text/javascript">
+      (function () {
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("./service-worker.js", { scope: "/" })
+            .then(() => console.log("Service Worker registered successfully."))
+            .catch(error => console.log("Service Worker registration failed:", error));
+        }
+      })();
+    </script>
 </body>
 </html>
