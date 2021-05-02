@@ -7,9 +7,6 @@ fetch("/api/transaction")
   .then(response => {
     return response.json();
   })
-  .catch((err) => {
-    return response(err);
-  })
   .then(data => {
     // save db data on global variable
     transactions = data;
