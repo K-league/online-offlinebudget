@@ -5,7 +5,7 @@ const FILES_TO_CACHE = [
     'public/index.js',
     '/public/icons/icon-192x192.png',
     '/public/icons/icon-512x512.png',
-    '/modules/transaction.js',
+    '/modles/transaction.js',
     'https://fonts.googleapis.com/css?family=Istok+Web|Montserrat:800&display=swap',
     'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css',
   ];
