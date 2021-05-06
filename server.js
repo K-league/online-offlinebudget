@@ -2,7 +2,7 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
-
+//service worker code in here somewhere...
 const PORT = 3000;
 
 const app = express();

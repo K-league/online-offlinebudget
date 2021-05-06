@@ -44,26 +44,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="index.js"></script>
-  <!-- indexedDB -->
-  <script>
-    const request = window.indexedDB.open("firstDatabase", 1);
-
-    request.onsuccess = event => {
-      console.log(request.result.name);
-    };
-  </script>
-  <!-- service-worker -->
-  <script>
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
-        navigator.serviceWorker.register("service-worker.js").then(reg => {
-          console.log("We found your service worker file!", reg);
-        });
-      });
-    } else {
-      console.log("Service worker file not found");
-    }
-  </script>
+  <script src="./index.js"></script>
+  <script src="indexedDB.js"></script>
 </body>
 </html>

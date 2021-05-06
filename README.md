@@ -7,3 +7,6 @@ SO THAT my account balance is accurate when I am traveling
 ```
 
 ## Tech Stack
+Manifest
+Service Worker
+IndexedDB

@@ -11,7 +11,7 @@ const FILES_TO_CACHE = [
   ];
   //install function which grabs cached pages
   self.addEventListener('install', function(evt){
-      evt.waitUntil(
-          caches.open()
-      )
+    //   evt.waitUntil(
+    //       caches.open()
+    //   )
   })
